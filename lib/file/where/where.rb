@@ -6,6 +6,10 @@ class File
         File.exist?(dir << '/' << cmd)
       end
     end
+
+    def self.is(cmd, env = ENV['PATH'])
+      are(cmd,env).shift
+    end
     
   end
 end
